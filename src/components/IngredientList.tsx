@@ -30,9 +30,9 @@ const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
         <IngredientItem name="Apples" amount={ingredients.apples} />
         <IngredientItem name="Carrots" amount={ingredients.carrots} />
         <IngredientItem name="Kale" amount={ingredients.kale} />
-        <IngredientItem name="Salt" amount={ingredients.salt} />
-        <IngredientItem name="Omega-3" amount={ingredients.omega3} />
-        <IngredientItem name="BalanceIT" amount={ingredients.balanceit} />
+        <IngredientItem name="Salt" amount={ingredients.salt.toFixed(2)} />
+        <IngredientItem name="Omega-3" amount={ingredients.omega3.toFixed(2)} />
+        <IngredientItem name="BalanceIT" amount={ingredients.balanceit.toFixed(2)} />
         </tbody>
       </table>
     </div>
