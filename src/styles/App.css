@@ -1,0 +1,33 @@
+/* filepath: /food-calculator/src/styles/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.ingredient {
+  padding: 0 50px;
+  text-align: left;
+}
+.amount {
+  text-align: right;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+}
