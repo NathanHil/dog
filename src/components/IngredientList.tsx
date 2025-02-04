@@ -21,8 +21,14 @@ const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
 
   return (
     <div className="ingredient-list">
-      <h2>Ingredients</h2>
       <table>
+        <thead>
+          <tr>
+            <th>Ingredient</th>
+            <th>Amount<br/>(grams)</th>
+            <th>Amount<br/>(tsp)</th>
+          </tr>
+        </thead>
         <tbody>
         <IngredientItem name="Chicken" amount={ingredients.chicken} />
         <IngredientItem name="Canola Oil" amount={ingredients.canola} />
@@ -30,9 +36,9 @@ const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
         <IngredientItem name="Apples" amount={ingredients.apples} />
         <IngredientItem name="Carrots" amount={ingredients.carrots} />
         <IngredientItem name="Kale" amount={ingredients.kale} />
-        <IngredientItem name="Salt" amount={(ingredients.salt).toFixed(2)} />
-        <IngredientItem name="Omega-3" amount={(ingredients.omega3).toFixed(2)} />
-        <IngredientItem name="BalanceIT" amount={(ingredients.balanceit).toFixed(2)} />
+        <IngredientItem name="Salt" amount={(ingredients.salt).toFixed(2)} volume={(days * 0.4).toFixed(2)} />
+        <IngredientItem name="Omega-3" amount={(ingredients.omega3).toFixed(2)} volume={(days * 0.191356628461).toFixed(2)} />
+        <IngredientItem name="BalanceIT" amount={(ingredients.balanceit).toFixed(2)} volume={(days * 3.363894).toFixed(2)}/>
         </tbody>
       </table>
     </div>

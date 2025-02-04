@@ -3,7 +3,7 @@ import './styles/App.css';
 import IngredientList from './components/IngredientList.tsx';
 
 const App: React.FC = () => {
-  const [days, setDays] = useState<number>(0);
+  const [days, setDays] = useState<number>(7);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setDays(Number(event.target.value));

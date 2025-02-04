@@ -4,12 +4,15 @@ import React from 'react';
 interface IngredientItemProps {
   name: string;
   amount: number;
+  volume?: string;
 }
 
-const IngredientItem: React.FC<IngredientItemProps> = ({ name, amount }) => {
+const IngredientItem: React.FC<IngredientItemProps> = ({ name, amount, volume }) => {
   return (
-    <tr colSpan="2">
-      <td className="ingredient">{name}</td><td className="amount">{amount} grams</td>
+    <tr colSpan="3">
+      <td className="ingredient">{name}</td>
+      <td className="amount">{amount}</td>
+      <td className="amount">{volume}</td>
     </tr>
   );  
 };
