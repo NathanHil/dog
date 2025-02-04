@@ -46,8 +46,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Build and Deploy to Github Pages
-in Terminal, once you've run your React app (`npm start`) and you're happy with thre results, push the changes to github and run the following commands in Terminal:
+In Terminal, once you've run your React app (`npm start`) and you're happy with thre results, push the changes to github and run the following commands in Terminal:
 
 `npm run build`
+
+Then commit your changes again
 
 `git subtree push --prefix build origin gh-pages`
