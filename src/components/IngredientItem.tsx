@@ -12,7 +12,7 @@ const IngredientItem: React.FC<IngredientItemProps> = ({ name, amount, volume })
     <tr colSpan="3">
       <td className="ingredient">{name}</td>
       <td className="amount">{amount}</td>
-      <td className="amount">{volume}</td>
+      <td className="volume">{volume}</td>
     </tr>
   );  
 };

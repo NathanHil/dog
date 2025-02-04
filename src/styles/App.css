@@ -23,6 +23,9 @@ input {
 .amount {
   text-align: right;
 }
+.volume {
+  padding-left: 20px;
+}
 
 h2 {
   margin-top: 20px;
