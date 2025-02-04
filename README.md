@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Build and Deploy to Github Pages
+in Terminal, once you've run your React app (`npm start`) and you're happy with thre results, push the changes to github and run the following commands in Terminal:
+`npm run build`
+
+`git subtree push --prefix build origin gh-pages`
