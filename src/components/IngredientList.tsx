@@ -8,15 +8,15 @@ interface IngredientListProps {
 
 const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
   const ingredients = {
-    chicken: days * 269, // 296 grams of chicken per day
-    canola: days * 16,
-    rice: days * 119,
-    apples: days * 61, 
+    chicken: days * 301, // 296 grams of chicken per day
+    canola: days * 18,
+    rice: days * 128,
+    apples: days * 68, 
     carrots: days * 28,
-    kale: days * 21,
-    salt: days * 2,
-    omega3: days * 0.83,
-    balanceit: days * 8.76
+    kale: days * 23,
+    salt: days * 3,
+    omega3: days * 0.92,
+    balanceit: days * 9.69
   };
 
   return (
@@ -30,7 +30,8 @@ const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
           </tr>
         </thead>
         <tbody>
-        <IngredientItem name="Chicken" amount={ingredients.chicken} volume={(ingredients.chicken/453.592).toFixed(2)+" lbs"} />
+        <IngredientItem name="Chicken (cooked)" amount={ingredients.chicken} volume={(ingredients.chicken/453.592).toFixed(2)+" lbs"} />
+        <IngredientItem name="Chicken (raw)" amount={ingredients.chicken/0.735} volume={((ingredients.chicken/0.735)/453.592).toFixed(2)+" lbs"} />
         <IngredientItem name="Canola Oil" amount={ingredients.canola} />
         <IngredientItem name="Rice" amount={ingredients.rice} />
         <IngredientItem name="Apples" amount={ingredients.apples} />
