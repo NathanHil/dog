@@ -35,16 +35,43 @@ const IngredientList: React.FC<IngredientListProps> = ({ days }) => {
           </tr>
         </thead>
         <tbody>
-        <IngredientItem name="Chicken (cooked)" amount={ingredients.chicken.toFixed(0)} volume={(ingredients.chicken/453.592).toFixed(2)+" lbs"} />
-        <IngredientItem name="Chicken (raw)" amount={(ingredients.chicken/0.735).toFixed(0)} volume={((ingredients.chicken/0.735)/453.592).toFixed(2)+" lbs"} />
-        <IngredientItem name="Canola Oil" amount={ingredients.canola.toFixed(0)} />
-        <IngredientItem name="Rice (cooked)" amount={ingredients.rice.toFixed(0)} volume={(ingredients.uncookedRice).toFixed(2)+" Cups uncooked"}/>
-        <IngredientItem name="Apples" amount={ingredients.apples.toFixed(0)} />
-        <IngredientItem name="Carrots" amount={ingredients.carrots.toFixed(0)} />
-        <IngredientItem name="Kale" amount={ingredients.kale.toFixed(0)} />
-        <IngredientItem name="Salt" amount={(ingredients.salt).toFixed(2)} volume={(days * 0.4).toFixed(2)+" tsp"} />
-        <IngredientItem name="Omega-3" amount={(ingredients.omega3).toFixed(2)} volume={(days * 0.191356628461).toFixed(2)+" tsp"} />
-        <IngredientItem name="BalanceIT" amount={(ingredients.balanceit).toFixed(2)} volume={(days * 0.07008).toFixed(1)+" Cups"}/>
+        <IngredientItem 
+          name="Chicken (cooked)" 
+          amount={ingredients.chicken.toFixed(0)} 
+          volume={(ingredients.chicken/453.592).toFixed(2)+" lbs"} />
+        <IngredientItem 
+          name="Chicken (raw)" 
+          amount={(ingredients.chicken/0.735).toFixed(0)} 
+          volume={((ingredients.chicken/0.735)/453.592).toFixed(2)+" lbs"} 
+          style={{ color: "grey", fontStyle: "italic"}} />
+        <IngredientItem 
+          name="Canola Oil" 
+          amount={ingredients.canola.toFixed(0)} />
+        <IngredientItem 
+          name="Rice (cooked)" 
+          amount={ingredients.rice.toFixed(0)} 
+          volume={(ingredients.uncookedRice).toFixed(2)+" Cups uncooked"}/>
+        <IngredientItem 
+          name="Apples" 
+          amount={ingredients.apples.toFixed(0)} />
+        <IngredientItem 
+          name="Carrots" 
+          amount={ingredients.carrots.toFixed(0)} />
+        <IngredientItem 
+          name="Kale" 
+          amount={ingredients.kale.toFixed(0)} />
+        <IngredientItem 
+          name="Salt" 
+          amount={(ingredients.salt).toFixed(2)} 
+          volume={(days * 0.4).toFixed(2)+" tsp"} />
+        <IngredientItem 
+          name="Omega-3" 
+          amount={(ingredients.omega3).toFixed(2)} 
+          volume={(days * 0.191356628461).toFixed(2)+" tsp"} />
+        <IngredientItem 
+          name="BalanceIT" 
+          amount={(ingredients.balanceit).toFixed(2)} 
+          volume={(days * 0.07008).toFixed(1)+" Cups"}/>
         <tr><td><strong>Total</strong></td><td>{totals.totalGrams.toFixed(0)} g</td><td><strong>{((totals.totalPerDay)/2).toFixed(0)}g</strong> per meal ({days*2})</td></tr>
         </tbody>
       </table>
